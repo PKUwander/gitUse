@@ -1,0 +1,70 @@
+0、告诉git你是谁
+git config --global user.name “名”
+git config --global user.email  "email"
+
+1、把这个目录变成Git可以管理的仓库
+git init
+
+2、把文件添加到暂存区
+git add 文件名
+
+3、提交到仓库
+git commit -m "wrote a readme file"
+
+4、查看提交log
+git log
+git log --pretty=oneline（精简显示）
+
+5、查看文件状态
+git status
+
+6、版本回退
+git reset --hard HEAD~2(回退到2个版本前）
+git reset --hard log码
+
+7、丢弃工作区的修改
+git checkout -- 文件名
+
+8、丢弃暂存区的文件修改
+git reset HEAD 文件名
+git checkout -- 文件名
+
+9、对比文件的不同
+git diff HEAD -- 文件 （对比版本库中的文件与工作区的文件）
+git diff HEAD^ HEAD --文件（对比两个版本的不同）
+
+10、删除文件
+git rm 文件
+
+11、创建分支
+git branch （查看分支）
+git checkout -b 分支
+
+12、切换分支
+git checkout 分支
+
+13 合并分支内容
+git merge 分支
+手动解决冲突并重新提交（冲突）
+git merge --no-ff -m "说明"   分支（禁用ff【备注：重新提交，并有log】）
+
+14 删除分支
+git branch -d 分支
+
+15、正在工作区编辑，需要修复bug
+git stash（隐藏现在的工作区）
+git stash list (列出保存的工作现场)
+git stash pop(恢复工作现场)
+
+16、生成ssh秘钥
+ssh-keygen -t rsa -C '594992719@qq.com'
+
+17、克隆项目
+git clone  地址 
+
+18、 本地推送远程仓库
+git push origin 分支
+
+
+
+
