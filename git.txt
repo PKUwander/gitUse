@@ -63,8 +63,14 @@ ssh-keygen -t rsa -C '594992719@qq.com'
 git clone  地址 
 
 18、 本地推送远程仓库
+git remote add origin git@github.com:CynScm/front-end-subjects.git 添加远程仓库
 git push origin 分支
 
+19、追踪远程
+git branch -- set -upstream-to=origin/远程分支
+
+20、拉取远程
+git pull origin 分支
 
 
 
